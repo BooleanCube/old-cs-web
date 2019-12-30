@@ -1,14 +1,27 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>The CS Hub - Home</title>
+  </head>
+  <body>
+    <nav>
+      <a href="#" id="name">The Computer Science Hub</a>
+      <a href ="#" id="nav-section-1">Home</a>
+      <a href ="#" id="nav-section-2">Info</a>
+      <a href ="#" id="nav-section-3">Rules</a>
+      <a href ="#" id="nav-section-4">Chat</a>
+      <a href ="#" id="nav-section-5">Support</a>
+    </nav>
+  </body>
+</html>
+<style>
 html {
   background-color: #5f5756;
   font-family: 'Lato', sans-serif;
   color: white;
-}
-body {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-  "nav nav nav"
-  ". img ."
 }
 
 /*nav structure and style*/
@@ -33,7 +46,6 @@ nav {
   grid-template-columns: 0.1fr 1.7fr 1fr 1fr 1fr 1fr 1fr;
   border: 1px solid #4c4544;
   border-radius: 30px;
-  grid-area: nav;
   position: relative;
   grid-template-areas:
   ". name home info rules chat support"
@@ -64,9 +76,4 @@ nav {
 #nav-section-5 {
   grid-area: support;
 }
-
-#cs-hub-img {
-  grid-area: img;
-  width: 70%;
-  height: 60%;
-}
+</style>
