@@ -5,10 +5,12 @@ html {
 }
 body {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 0.1fr 1fr 0.1fr;
+  grid-gap: 0;
   grid-template-areas:
   "nav nav nav"
   ". img ."
+  ". paragraph ."
 }
 
 /*nav structure and style*/
@@ -66,7 +68,19 @@ nav {
 }
 
 #cs-hub-img {
+  padding-top: 2%;
+  display: block;
+  margin: 0 auto;
   grid-area: img;
-  width: 70%;
-  height: 60%;
+  width: 75%;
+  padding-bottom: 0;
+}
+#paragraph {
+  margin-top: 15px;
+  grid-area: paragraph;
+  font-size: 2em;
+  width: 100%;
+}
+#paragraph p {
+  margin-left: 5%;
 }
