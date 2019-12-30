@@ -1,0 +1,17 @@
+html {
+  background-color: #5f5756;
+  color: white;
+}
+nav {
+  background-color: #6f6766;
+  color: white;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+}
+nav a[id^="nav-section"] {
+  border: 1px solid black;
+  margin: 10px;
+}
