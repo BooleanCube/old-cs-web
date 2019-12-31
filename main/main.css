@@ -11,6 +11,7 @@ body {
   "nav nav nav"
   ". img ."
   ". paragraph ."
+  "footer footer footer"
 }
 
 /*nav structure and style*/
@@ -66,13 +67,21 @@ nav {
 #nav-section-5 {
   grid-area: support;
 }
+footer {
+  grid-area: footer;
+  background-color: #6f6766;
+  border: 1px solid #6f6766;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
 
 #cs-hub-img {
   padding-top: 2%;
   display: block;
   margin: 0 auto;
   grid-area: img;
-  width: 75%;
+  width: 92%;
   padding-bottom: 0;
 }
 #paragraph {
@@ -80,7 +89,15 @@ nav {
   grid-area: paragraph;
   font-size: 2em;
   width: 100%;
+  margin-bottom: 20px;
 }
 #paragraph p {
   margin-left: 5%;
+}
+nav a:hover {
+  color: #999999;
+}
+footer p {
+  display: inline-block;
+  margin-right: 40px;
 }
