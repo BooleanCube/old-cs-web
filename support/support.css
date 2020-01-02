@@ -1,0 +1,101 @@
+html {
+  background-color: #5f5756;
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+body {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 0.1fr;
+  grid-gap: 0;
+  grid-template-areas:
+  "nav nav nav"
+  ". sec1 ."
+  ". sec2 ."
+  ". sec3 ."
+  "footer footer footer"
+}
+
+/*nav structure and style*/
+nav {
+  background-color: #4c4544;
+  padding: 15px;
+  color: white;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+}
+nav a[id^="nav-section"] {
+  position: relative;
+  padding: 5px;
+  /*background-color: #6f6766;*/
+  text-align: center;
+  font-size: 1.3em;
+}
+nav {
+  display: grid;
+  grid-area: nav;
+  grid-template-columns: 0.1fr 1.7fr 1fr 1fr 1fr 1fr 1fr;
+  border: 1px solid #4c4544;
+  border-radius: 30px;
+  position: relative;
+  grid-template-areas:
+  ". name home info rules chat support"
+}
+
+/*nav areas and styles*/
+#name {
+  grid-area: name;
+  font-size: 2em;
+}
+#nav-section-1 {
+  grid-area: home;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+#nav-section-2 {
+  grid-area: info;
+  border-right: 1px solid white;
+}
+#nav-section-3 {
+  grid-area: rules;
+  border-right: 1px solid white;
+}
+#nav-section-4 {
+  grid-area: chat;
+  border-right: 1px solid white;
+}
+#nav-section-5 {
+  grid-area: support;
+}
+nav a:hover {
+  color: #999999;
+}
+#sec-1 {
+  grid-area: sec1 ;
+}
+#sec-2 {
+  grid-area: sec2 ;
+}
+#sec-3 {
+  grid-area: sec3 ;
+}
+
+div[id^="sec"] {
+  font-size: 2em;
+}
+div[id^="sec"] ul, p {
+  margin-left: 5%;
+}
+footer p {
+  display: inline-block;
+  margin-right: 40px;
+}
+footer {
+  grid-area: footer;
+  background-color: #6f6766;
+  border: 1px solid #6f6766;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
